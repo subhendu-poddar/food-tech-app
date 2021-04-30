@@ -19,7 +19,7 @@ class Dashboard extends Component {
     }
     async getRestaurants() {
         try {
-            const url = 'http://localhost:8080'
+            // const url = 'http://localhost:8080'
             const response = await axios.get(/* url+ */'/restaurants')
             if (response.data) {
                 this.setState({ restaurants: response.data })

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Link, HashRouter, Switch, Route } from 'react-router-dom'
 import AddRestaurant from './RoutePage/AddRestaurant'
 import OrderFood from './RoutePage/OrderFood'
 import Dashboard from './RoutePage/Dashboard'
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter>
+        <HashRouter>
           <div className='navbar'>
             <div className='container'>
               <div className='navbar-container'>
@@ -21,13 +21,13 @@ class App extends Component {
           </div>
           
           <Switch>
-            <Route exact path='/' component={Dashboard} /> {/* <Dashboard />  */}{/* </Route>  */}
-            <Route exact path='/dashboard' component={Dashboard } />{/*  <Dashboard />  */}{/* </Route> */}
-            <Route exact path='/order-food' component={OrderFood } /> {/* <OrderFood /> */} {/* </Route> */}
-            <Route exact path='/add-restaurant' component={AddRestaurant } /> {/* <AddRestaurant /> */} {/* </Route> */}
+            <Route exact path='/'> <Dashboard /> </Route> 
+            <Route exact path='/dashboard'> <Dashboard /> </Route>
+            <Route exact path='/order-food'> <OrderFood /> </Route>
+            <Route exact path='/add-restaurant'> <AddRestaurant /> </Route>
           </Switch>
 
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }

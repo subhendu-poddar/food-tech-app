@@ -18,7 +18,7 @@ class OrderFood extends Component {
     }
     async getRestaurants() {
         try {
-            const url = 'http://localhost:8080'
+            // const url = 'http://localhost:8080'
             const response = await axios.get(/* url+ */'/restaurants')
             if (response.data) {
                 this.setState({ restaurants: response.data })
@@ -37,7 +37,7 @@ class OrderFood extends Component {
 
             console.log(selected_restaurant.name)
 
-            const url = 'http://localhost:8080'
+            // const url = 'http://localhost:8080'
             const response = await axios.put(/* url+ */'/order-food/'+selected_restaurant.name, selected_restaurant)
             console.log(response.data)
             if (response.data) {
