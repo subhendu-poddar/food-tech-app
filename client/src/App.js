@@ -21,11 +21,10 @@ class App extends Component {
           </div>
           
           <Switch>
-            <Route path='/'> <Dashboard /> </Route> 
-            <Route path='/dashboard'> <Dashboard /> </Route>
-            <Route path='/order-food'> <OrderFood /> </Route>
-            <Route path='/order-food?'> <OrderFood /> </Route>
-            <Route path='/add-restaurant'> <AddRestaurant /> </Route>
+            <Route exact path='/'> <Dashboard /> </Route> 
+            <Route exact path='/dashboard'> <Dashboard /> </Route>
+            <Route exact path='/order-food'> <OrderFood /> </Route>
+            <Route exact path='/add-restaurant'> <AddRestaurant /> </Route>
           </Switch>
 
         </BrowserRouter>
