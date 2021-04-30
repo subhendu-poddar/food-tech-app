@@ -18,7 +18,7 @@ class AddRestaurant extends Component {
             evt.preventDefault()
             const data = this.state
             const url = 'http://localhost:8080'
-            const response = await axios.post(url + '/add-restaurant', data)
+            const response = await axios.post('/add-restaurant', data)
             if (response.data) {
                 console.log('Restaurant Successfully Added')
                 this.resetState();
