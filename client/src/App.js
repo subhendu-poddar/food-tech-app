@@ -21,10 +21,10 @@ class App extends Component {
           </div>
           
           <Switch>
-            <Route exact path='/'> <Dashboard /> </Route> 
-            <Route exact path='/dashboard'> <Dashboard /> </Route>
-            <Route exact path='/order-food'> <OrderFood /> </Route>
-            <Route exact path='/add-restaurant'> <AddRestaurant /> </Route>
+            <Route exact path='/' component={Dashboard} /> {/* <Dashboard />  */}{/* </Route>  */}
+            <Route exact path='/dashboard' component={Dashboard } />{/*  <Dashboard />  */}{/* </Route> */}
+            <Route exact path='/order-food' component={OrderFood } /> {/* <OrderFood /> */} {/* </Route> */}
+            <Route exact path='/add-restaurant' component={AddRestaurant } /> {/* <AddRestaurant /> */} {/* </Route> */}
           </Switch>
 
         </BrowserRouter>
