@@ -7,13 +7,16 @@
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "start": "nodemon server",
-    "server": "nodemon server"
+    "dev": "concurrently -n 'server,client' -c 'yellow,green' \"npm run server\" \"npm run client\" ",
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "cd client && npm run start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.0.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

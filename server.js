@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/food_tech_app',
 })
 
 mongoose.connection.on('connected', () => {
-    console.log('Mongoose is connected !!')
+    console.log('Mongoose is connected !!');
 })
 
 app.use(express.json())
