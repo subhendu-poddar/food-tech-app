@@ -15,13 +15,13 @@ class OrderFood extends Component {
     }
     componentDidMount() {
         this.getRestaurants()
-        this.checkStatus()
+        // this.checkStatus()
     }
-    checkStatus() {
-        return(
-            this.state.ordered ? <div>Order Placed !!</div> : null
-        )
-    }
+    // checkStatus() {
+    //     return(
+    //         this.state.ordered ? <div>Order Placed !!</div> : null
+    //     )
+    // }
     async getRestaurants() {
         try {
             const url = 'http://localhost:8080'
@@ -35,8 +35,6 @@ class OrderFood extends Component {
         }
     }
 
-
-
     async submit() {
         try {
             const selected_restaurant = this.state.selected_restaurant
@@ -47,10 +45,10 @@ class OrderFood extends Component {
 
             const url = 'http://localhost:8080'
             const response = await axios.put('/order-food/'+selected_restaurant.name, selected_restaurant)
-            if (!response.data) {
+            console.log(response.data)
+            if (response.data) {
                 console.log('Error Found: ')
             }
-            this.resetState()
         } catch (err) {
             console.log('Error Found: ' + err)
         }
