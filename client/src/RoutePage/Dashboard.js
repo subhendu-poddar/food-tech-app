@@ -14,8 +14,8 @@ class Dashboard extends Component {
     }
 
     componentDidMount() {
-        // this.interval = setInterval(()=> this.getRestaurants(), 2000)
-        this.getRestaurants()
+        this.interval = setInterval(()=> this.getRestaurants(), 2000)
+        // this.getRestaurants()
     }
     async getRestaurants() {
         try {
