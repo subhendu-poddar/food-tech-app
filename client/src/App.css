@@ -1,0 +1,297 @@
+:root {
+  --danger: #ff8a80;
+  --blue: #0d47a1;
+  --light: #bbdefb;
+}
+
+body {
+  background-color: rgb(170, 137, 76);
+}
+
+.head {
+  margin: auto;
+  justify-content: center;
+  font-size: xx-large;
+}
+.name {
+  font-size: large;
+}
+
+.restaurant  {
+  background-color: rgb(178, 218, 33);
+
+  text-decoration: none;
+  padding: 0.1rem 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin: 10px;
+  transition: all 0.4rem ease-out;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+  cursor: pointer;
+}
+
+.orders {
+  font-size: xx-large;
+  /* background-color: hotpink; */
+  border-radius: 0.1rem;
+  margin: auto;
+}
+.navbar {
+  background-color: var(--blue);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  background-color: var(--light);
+  color: blue;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-user {
+  margin-top: 0.5rem;
+  font-size: x-large;
+  color: var(--light);
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+.button {
+  background-color: var(--light);
+  border: 2px solid var(--blue);
+  border-radius: 0.5rem;
+  color: var(--blue);
+  font-size: 1.4rem;
+  margin: 1rem;
+  padding: 0.2rem 1rem;
+  transition: all 0.4rem ease-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.button_center {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 50%;
+  margin: 1rem auto;
+  background-color: var(--blue);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--light);
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-label {
+  color: white;
+  /* text-transform: uppercase; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+}
+.profileBox{
+    height: auto;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1{
+    background-color: white; 
+    color: black; 
+    border: 3px solid #008CBA;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    outline: none;
+}
+.btn1:hover{
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;   
+}
+.btn1:active{
+    background-color: #008CBA;
+    color: white;
+    cursor: grabbing;
+}
+
+.btn2{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    outline: none;
+    text-align: center;
+}
+.btn2:hover{
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;   
+}
+.btn2:active{
+    background-color: #f44336;
+    color: white;
+    cursor: grabbing;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    margin: auto;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+.counter{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 120px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    border: 1px black solid;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+.submit_btn, .team_btn {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    height: 60px;
+    width: 200px;
+    outline: none;
+}
+.submit_btn:hover,.team_btn:hover {
+    color: #404040 !important;
+    font-weight: 10 !important;
+    letter-spacing: 1px;
+    background: none;
+    transition: all 0.3s ease 0s;
+}
+.team_btn {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    height: 60px;
+    width: 120px;
+    outline: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.menubar {
+    background-color: blueviolet;
+    padding: 1rem;
+}
+.menu {
+    border: none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    height: 60px;
+    width: 200px;
+    outline: none;
+    margin-block-end: auto;
+    padding: 5px;
+    font-size: x-large;
+}
+
+
+.food {
+    border: none;
+    background: rgb(241, 75, 228);
+    /* color: #ffffff !important; */
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    
+    
+    transition: all 0.3s ease 0s;
+    height: 60px;
+    width: 120px;
+    outline: white;
+    margin: 10px;
+}
